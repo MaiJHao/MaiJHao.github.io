@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>CompletableFuture学习</title>
+      <link href="/2023/07/30/completablefuture-yi-wen/"/>
+      <url>/2023/07/30/completablefuture-yi-wen/</url>
+      
+        <content type="html"><![CDATA[<p>相关链接：<a href="https://zhuanlan.zhihu.com/p/515993095">CompletableFuture原理与实践-外卖商家端API的异步化 - 知乎 (zhihu.com)</a></p><p><a href="https://juejin.cn/post/7168261825165787149">简述CompletableFuture异步任务编排 - 掘金 (juejin.cn)</a></p><p><a href="https://my.oschina.net/u/4090830/blog/10091428">并发编程-CompletableFuture解析 | 京东物流技术团队 - 京东云开发者的个人空间 - OSCHINA - 中文开源技术交流社区</a></p><h3 id="CompletebleFuture是什么？"><a href="#CompletebleFuture是什么？" class="headerlink" title="CompletebleFuture是什么？"></a>CompletebleFuture是什么？</h3><h3 id="解决什么了问题"><a href="#解决什么了问题" class="headerlink" title="解决什么了问题"></a>解决什么了问题</h3><ul><li>回调地狱</li><li>代码更简洁易懂</li></ul><p>CompleteFuture可以用在任务编排，包括一元依赖、二元依赖、三元依赖，可以避免回调地狱，并且代码简单易懂，具有很强的逻辑性</p><h3 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h3><h4 id="Future"><a href="#Future" class="headerlink" title="Future"></a>Future</h4><p>在了解CompleteFuture之前，我们也需要知道Future是什么</p><p>可以参考这篇文章<a href="https://www.cnblogs.com/cz123/p/7693064.html">彻底理解Java的Future模式 - 大诚挚 - 博客园 (cnblogs.com)</a></p><p>总结：Future是一个泛型类接口，其中定义了一个get方法，我们可以使用实现了Future接口的FutureTask类，并传入Callable对象，Callable中有call方法，当新建一个Thead对象并传入FutureTask对象时，调用Thread的start方法，call方法会返回一个对象。</p><p>实际上就是普通的线程执行，但是优点在于我们可以在主线程随时获取call方法的返回值，只有future.get()会阻塞等待结果返回，不然你可以一直异步执行其他线程活动，这就是future的优点，我们在执行主线程方法时，线程1异步执行，并且主线程可以在任意地方获取线程1的返回值，也可以理解为什么时候线程1执行完。</p><p><img src="https://img-blog.csdn.net/20180606202542500" alt="img"></p><h4 id="什么是回调地狱"><a href="#什么是回调地狱" class="headerlink" title="什么是回调地狱"></a>什么是回调地狱</h4>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/07/30/netty-xue-xi-guo-cheng-zhong-de-yi-wen/"/>
+      <url>/2023/07/30/netty-xue-xi-guo-cheng-zhong-de-yi-wen/</url>
+      
+        <content type="html"><![CDATA[<h3 id="什么是Reactor模型？"><a href="#什么是Reactor模型？" class="headerlink" title="什么是Reactor模型？"></a>什么是Reactor模型？</h3><h3 id="Eventloop"><a href="#Eventloop" class="headerlink" title="Eventloop"></a>Eventloop</h3><h4 id="Eventloop是事件驱动？它驱动了什么，和Channel什么关系"><a href="#Eventloop是事件驱动？它驱动了什么，和Channel什么关系" class="headerlink" title="Eventloop是事件驱动？它驱动了什么，和Channel什么关系"></a>Eventloop是事件驱动？它驱动了什么，和Channel什么关系</h4>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2023/07/29/hello-world/"/>
       <url>/2023/07/29/hello-world/</url>
