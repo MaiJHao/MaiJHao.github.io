@@ -17,6 +17,19 @@
     
     
     <entry>
+      <title>Nginx学习</title>
+      <link href="/2023/07/30/nginx-xue-xi/"/>
+      <url>/2023/07/30/nginx-xue-xi/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.nginx-cn.net/blog/deploying-nginx-nginx-plus-docker/">https://www.nginx-cn.net/blog/deploying-nginx-nginx-plus-docker/</a></p><p>官方Docker部署教程: <a href="https://www.nginx-cn.net/blog/deploying-nginx-nginx-plus-docker/">https://www.nginx-cn.net/blog/deploying-nginx-nginx-plus-docker/</a></p><p>官方安装Nginx教程: <a href="https://www.nginx-cn.net/blog/back-to-basics-web-traffic-encryption-with-ssl-tls-and-nginx/">https://www.nginx-cn.net/blog/back-to-basics-web-traffic-encryption-with-ssl-tls-and-nginx/</a></p><h3 id="Nginx是什么"><a href="#Nginx是什么" class="headerlink" title="Nginx是什么"></a>Nginx是什么</h3><p>Nginx 是一个很强大的高性能<a href="https://baike.baidu.com/item/Web/150564?fromModule=lemma_inlink">Web</a>和<a href="https://baike.baidu.com/item/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/0?fromModule=lemma_inlink">反向代理</a>服务</p><h3 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h3><ul><li><p>使用Docker安装Nginx</p><p><code>docker pull nginx</code></p></li><li><p>运行Nginx</p><p><code>docker run --name mynginx1 -p 80:80 -d nginx</code></p></li><li><p>验证是否正确运行</p><p>外部机（windows）访问虚拟机的地址192.168.65.128</p><p>如果不知道虚拟机的地址，则在控制台输入<code>ifconfig</code>，一般ens33就是虚拟机的ip</p><p>如果访问还是失败，可以尝试关闭防火墙<code>systemctl stop firewalld</code></p></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/2023/07/30/netty-xue-xi-guo-cheng-zhong-de-yi-wen/"/>
       <url>/2023/07/30/netty-xue-xi-guo-cheng-zhong-de-yi-wen/</url>
